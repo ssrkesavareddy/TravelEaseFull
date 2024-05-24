@@ -1,0 +1,44 @@
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-image: url(https://imgs.search.brave.com/7RHkC-7PGq3IuG3ScM-a6-dfVQmYdflNRwVcVatQjp0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuYnVja2V0bGlz/dGx5LmJsb2cvc2l0/ZXMvNWFkZjc3OGI2/ZWFiY2MwMDE5MGI3/NWIxL2Fzc2V0cy82/MDc1MTgzZTg2ZDA5/MjAwMGIxOTJkMDAv/YmVzdC1mcmVlLXRy/YXZlbC1pbWFnZXMt/aW1hZ2UtOC5qcGc);
+    /* Orange color */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sign{
+    text-decoration: none;
+    color: white
+  }
+  
+  .login-form {
+    background-color: #fff; /* White color */
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title {
+    color: #ffa07a; /* Orange color */
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border-color: #ffa07a; /* Orange color */
+    
+  }
+  
+  .log-bt {
+    background-color: #ffa07a; /* Orange color */
+    border-color: #ffa07a; /* Orange color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #e08e6b; /* Darker orange color */
+    border-color: #e08e6b; /* Darker orange color */
+  }

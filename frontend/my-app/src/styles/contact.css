@@ -1,0 +1,16 @@
+.contact-container {
+    width : 100%;
+  
+    background-color: orange;
+  }
+  
+  .form-control{
+    width : 800px;
+  }
+
+  .contact-query{
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  

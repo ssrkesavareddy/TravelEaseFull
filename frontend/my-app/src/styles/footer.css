@@ -1,0 +1,10 @@
+
+.footer-bottom {
+  background: #222;
+  color: #bbb;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}

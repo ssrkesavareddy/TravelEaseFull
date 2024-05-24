@@ -1,0 +1,208 @@
+.detail{
+    height: auto;
+    width: 100%;
+    background-color:transparent;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 4px #aaaa;
+}
+.dethead{
+    height:  50px;
+    width: 100%;
+    background: linear-gradient(180deg,blue,maroon);
+   
+}
+.detailheading{
+    color: #FFF;
+    text-align: center;
+    font-weight: 800;
+}
+.detailimg{
+    height: 400px;
+}
+
+.detailimg img{
+    height: 400px;
+}
+
+.restName {
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.aboutplace {
+    height: 31px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.cuisine {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.cuisines {
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+@media only screen and (max-width:500px){
+    .detailheading{
+        color: #FFF;
+        text-align: center;
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .detailimg{
+          height: 250px;
+    }
+    .detailimg img{
+        height: 250px;
+    }
+    .cuisine {
+        height: 25px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+       
+    }
+    
+    .cuisines {
+        height: 30px;
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+        margin-top: 5px;
+    }
+    
+    
+}
+
+.biryaniorders{
+    height: auto;
+    width: 100%;
+   
+}
+
+.birorderimages{
+    height: 400px;
+}
+
+.birorderimages img{
+    height: 400px;
+}
+
+.biryanirestName{
+    font-weight: 600;
+    font-family: poppins;
+
+}
+.biryanirestMenu{
+    color: rgb(54, 2, 2)
+}
+
+.aboutbiryanirestplaceMenuforrest{
+    height: 180px;
+    width: 330px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.addingbiryaniitemsimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.rambabubirtext{
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 150px;
+    bottom: 70px;
+}
+.biryanirestMenu{
+    font-size: 18px;
+}
+
+.biryaniaddingname{
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+@media only screen and (max-width:400px){
+    .biryanirestMenu{
+        font-size: 8px;
+    }
+    .textheadingram{
+       font-size: 12px;
+       margin-top: 5px;
+    }
+    .birorderimages{
+        height: 200px;
+    }
+    
+    .birorderimages img{
+        height: 200px;
+    }
+    .aboutbiryanirestplaceMenuforrest{
+        height: 180px;
+        width: 230px;
+
+    }
+    .aboutbiryanirestplaceMenuforresttext{
+        font-size: 10px;
+    }
+}

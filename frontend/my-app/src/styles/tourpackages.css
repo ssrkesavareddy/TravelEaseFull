@@ -1,0 +1,79 @@
+.tour-pack{
+    width : 100%;
+
+    height : 600px;
+
+    background-color: aliceblue;
+
+    background-image: url(https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?w=826&t=st=1714374001~exp=1714374601~hmac=459582be7f4f983d4eefd72c70d4ee3197bcbc0620c23e6e3279174337cf3c69);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.tour-tec{
+    color : #fff;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.tour-tec:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .search-input {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    width: 100%;
+  }
+
+  .result-container{
+    height : auto;
+    width : 300px;
+    background-color: #fff;
+  }
+  .suggest{
+    
+    
+    color : rgb(8, 8, 87);
+    font-size: 20px;
+  }
+
+  .suggest-image{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    margin : 10px
+  }
+  
+  .search-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Style placeholder text */
+  .search-input::placeholder {
+    color: #999;
+  }
+  
+  /* Optional: Hover effect on search button */
+  .search-button:hover {
+    background-color: darkorange;
+  }
+  

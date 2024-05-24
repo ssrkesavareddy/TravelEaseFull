@@ -1,0 +1,171 @@
+// navabr
+
+{User ? (
+    <>
+      <li className="nav-item mx-2">
+        <span className="nav-link text-white">Welcome, {user.name}</span>
+      </li>
+      <li className="nav-item mx-2">
+        <button className="btn btn-link text-white" onClick={logout}>Logout</button>
+      </li>
+    </>
+  ) : (
+    <>
+      <li className="nav-item mx-2">
+        <Link className="nav-link text-white" to="/signin">Sign In</Link>
+      </li>
+      <li className="nav-item mx-2">
+        <Link className="nav-link text-white" to="/signup">Sign Up</Link>
+      </li>
+    </>
+  )}
+
+
+  /// header
+
+
+  import React from 'react';
+
+import '../styles/header.css'
+
+import { useContext } from 'react';
+
+import UserContext from './signin'
+
+function Header(props) {
+  const user = useContext(UserContext);
+    return (
+        <>
+        
+    <nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#">Travel-ease</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active mx-2">
+        <a class="nav-link text-white" href="/">Home</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a class="nav-link text-white" href="/about">About</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a class="nav-link text-white" href="/tour-packages">Tour Packages</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a class="nav-link text-white" href="/best-packages">Best Packages</a>
+      </li>
+      
+      {user ? (
+    <>
+      <li className="nav-item mx-2">
+        <span className="nav-link text-white">Welcome, {user.name}</span>
+      </li>
+      <li className="nav-item mx-2">
+        <button className="btn btn-link text-white">Logout</button>
+      </li>
+    </>
+  ) : (
+    <>
+      <li className="nav-item mx-2">
+        <a className="nav-link text-white" href="/signin">Sign In</a>
+      </li>
+      <li className="nav-item mx-2">
+        <a className="nav-link text-white" href="/signup">Sign Up</a>
+      </li>
+    </>
+  )}
+    </ul>
+  </div>
+</nav>
+        
+        </>
+    );
+}
+
+export default Header; 
+
+
+
+// signin
+
+import React, { useState,useContext, createContext } from 'react';
+import axios from 'axios';
+
+import { useNavigate } from 'react-router-dom';
+
+
+import '../styles/signin.css';
+
+const UserContext = createContext();
+
+
+function Signin() {
+  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+ // const { User,setUser } = useContext(''); 
+ const [ User,setUser ] = useState('');
+
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await axios.post('http://localhost:5000/login', { email, password });
+    const { user } = response.data;
+   
+    const x = user.name
+    
+    setUser(x); 
+    
+  } catch (error) {
+    console.error('Login failed:', error.response.data);
+  }
+};
+
+  return (
+    <>
+    <UserContext.Provider value={User}>
+    <div>
+      <div className="login-container">
+        <div className="login-form">
+          <h1 className="login-title">Login</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                value={email}
+                name="email"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                id="password"
+                value={password}
+                name="password"
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </div>
+            <button type="submit" className="btn btn-primary log-bt">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </UserContext.Provider>
+    </>
+  );
+}
+
+export default {Signin,UserContext};
+

@@ -1,0 +1,48 @@
+[
+    {
+        "_id":{"$oid":"662cfa8e195284d1b544481f"},
+      "placeimg1": "https://example.com/kedarnath1.jpg",  
+      "placeimg2": "https://example.com/kedarnath2.jpg",  
+      "placeimg3": "https://example.com/kedarnath3.jpg",  
+      "placinfo": "Kedarnath, Char dham yatra",
+      "placename": "Kedarnath Tour",
+      "placetime": "5 days, 4 nights spiritual journey",
+      "__v": 0
+    },
+    {
+        "_id":{"$oid":"662cfae4195284d1b5444820"},
+        "placeimg1": "https://example.com/kerala1.jpg",  
+        "placeimg2": "https://example.com/kerala2.jpg",  
+        "placeimg3": "https://example.com/kerala3.jpg",  
+        "placinfo": "Alleppey Backwaters, Munnar Hill Station, Kovalam Beaches",
+        "placename": "Enthralling Kerala Tour",
+        "placetime": "10 days, 9 nights adventure",
+        "description": "Embark on a captivating journey through Kerala, exploring the serene backwaters of Alleppey, the misty hills of Munnar, and the pristine beaches of Kovalam. Immerse yourself in the rich culture, breathtaking landscapes, and captivating beauty of this southern paradise.",
+        "activities": [
+          "Houseboat cruise along the Alleppey backwaters",
+          "Trekking and sightseeing in Munnar",
+          "Relaxation and water activities on Kovalam beaches",
+          "Ayurvedic spa treatments (optional)",
+          "Exploring local markets and experiencing Kerala's culinary delights"
+        ],
+        "__v": 0
+    },
+    {
+        "_id":{"$oid":"662d0164195284d1b5444821"},
+        "placeimg1": "https://example.com/manali1.jpg",  
+        "placeimg2": "https://example.com/manali2.jpg",  
+        "placeimg3": "https://example.com/manali3.jpg",  
+        "placinfo": "Rohtang Pass, Solang Valley, Vashisht Temple",
+        "placename": "Manali Adventure Getaway",
+        "placetime": "7 days, 6 nights winter thrill",
+        "description": "Experience the captivating beauty of Manali, a haven for adventure enthusiasts and nature lovers. Witness the majestic snow-clad peaks, traverse the iconic Rohtang Pass, and indulge in thrilling activities like skiing, snowboarding, and paragliding. Immerse yourself in the serenity of Solang Valley and the spiritual aura of Vashisht Temple.",
+        "activities": [
+          "Scenic drive through Rohtang Pass",
+          "Adventure sports in Solang Valley (skiing, snowboarding, paragliding)",
+          "Relaxation in natural hot springs at Vashisht Temple",
+          "Hiking and trekking in the Himalayas",
+          "Exploring local markets and experiencing Manali's cuisine"
+        ],
+        "__v": 0
+    }
+  ]
